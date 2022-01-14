@@ -5,6 +5,8 @@ import Title from "../Components/Title";
 import PhoneIcon from "@material-ui/icons/Phone";
 import EmailIcon from "@material-ui/icons/Email";
 import LocationOnIcon from "@material-ui/icons/LocationOn";
+import GithubIcon from "@material-ui/icons/GitHub";
+import LinkedInIcon from "@material-ui/icons/LinkedIn"
 import ContactItem from "../Components/ContactItem";
 import { motion } from "framer-motion";
 import emailjs from "emailjs-com";
@@ -168,6 +170,25 @@ function ContactPage() {
                 cont1={"Mumbi,Maharastra"}
                 cont2={"India"}
               />
+
+              <div className="icons">
+                <a
+                  href="https://www.linkedin.com/in/sharoof-khan-0703/"
+                  className="icon i-linked"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <LinkedInIcon />
+                </a>
+                <a
+                  href="https://github.com/sharoof-khan"
+                  className="icon i-github"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <GithubIcon />
+                </a>
+              </div>
             </div>
           </InnerLayout>
         </ContactPageStyled>
@@ -177,6 +198,7 @@ function ContactPage() {
 }
 
 const ContactPageStyled = styled.section`
+  overflow-x: hidden;
   .contact-section {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -196,6 +218,52 @@ const ContactPageStyled = styled.section`
       }
       @media screen and (max-width: 502px) {
         width: 70%;
+      }
+      .icons {
+        display: flex;
+        justify-content: center;
+        margin-top: 1rem;
+
+        .icon {
+          border: 2px solid var(--border-color);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 50%;
+          transition: all 0.4s ease-in-out;
+          cursor: pointer;
+          height: 50px;
+          width: 50px;
+          &:hover {
+            border: 2px solid var(--primary-color);
+            color: var(--primary-color);
+          }
+          &:not(:last-child) {
+            margin-right: 1rem;
+          }
+          svg {
+            margin: 0.5rem;
+          }
+        }
+
+        .i-linked {
+          &:hover {
+            border: 2px solid rgb(10, 102, 194);
+            color: rgb(10, 102, 194);
+          }
+        }
+        .i-github {
+          &:hover {
+            border: 2px solid #5f4687;
+            color: #5f4687;
+          }
+        }
+        .i-leetcode {
+          &:hover {
+            border: 2px solid rgb(250, 157, 22);
+            color: rgb(250, 157, 22);
+          }
+        }
       }
     }
     .contact-title {
@@ -303,6 +371,10 @@ const ContactPageStyled = styled.section`
   .f-button {
     display: flex;
     align-items: center;
+  }
+  @media screen and (max-width: 500px) {
+    overflow-x: hidden;
+    flex-wrap: wrap;
   }
 `;
 

@@ -114,8 +114,8 @@ const HomePageStyled = styled.header`
 
       .i-linked {
         &:hover {
-          border: 2px solid rgb(10,102,194);
-          color: rgb(10,102,194);
+          border: 2px solid rgb(10, 102, 194);
+          color: rgb(10, 102, 194);
         }
       }
       .i-github {
@@ -126,11 +126,15 @@ const HomePageStyled = styled.header`
       }
       .i-leetcode {
         &:hover {
-          border: 2px solid rgb(250,157,22);
-          color: rgb(250,157,22);
+          border: 2px solid rgb(250, 157, 22);
+          color: rgb(250, 157, 22);
         }
       }
     }
+  }
+  @media screen and (max-width: 500px) {
+    overflow-x: hidden;
+    flex-wrap: wrap;
   }
 `;
 

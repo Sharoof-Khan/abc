@@ -4,7 +4,8 @@ import styled from "styled-components";
 // import resume from "../img/resume1.png";
 import resume from "../img/dp.jpg";
 // import me from "../img/resume2.png";
-import me from "../img/srk.jpg";
+// import me from "../img/srk.jpg";
+import me from "../img/dp3.png";
 import PrimaryButton from "./PrimaryButton";
 import SecondryButton from './SecondryButton'
 import "../App.css"
