@@ -6,6 +6,8 @@ import { motion } from "framer-motion";
 import { init } from "ityped";
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import { SiLeetcode } from "react-icons/si";
+// import Style from './HomePage.module.css';
+// import  './HomePage.module.css';
 const containerVariants = {
   hidden: {
     opacity: 0,
@@ -43,32 +45,39 @@ function HomePage({theme}) {
           <Particle theme={theme} />
         </div>
         <div className="typography">
-          <h1>
-            Hi, I'm 
+          <h1>Hi, I'm</h1>
+          {/* className={Style.nm} */}
+          <h1
+            style={{ fontSize: 65, color: "var(--primary-color)" }}
+            className="nm"
+          >
+            SHAROOF KHAN
           </h1>
-          <h1 style={{fontSize:70,color:"var(--primary-color)"}} >SHAROOF KHAN</h1>
           <span
             ref={info}
             style={{ fontSize: 35, display: "block", minHeight: 50 }}
           ></span>
           <p>
-          It's Nice To Meet You. I Design And Code Beautifully And I Love What I Do.
+            It's Nice To Meet You. I Design And Code Beautifully And I Love What
+            I Do.
           </p>
           <div className="icons">
-            <a href="https://www.linkedin.com/in/sharoof-khan-0703/" className="icon i-linked"
-            target="_blank"
-            rel="noopener noreferrer"
+            <a
+              href="https://www.linkedin.com/in/sharoof-khan-0703/"
+              className="icon i-linked"
+              target="_blank"
+              rel="noopener noreferrer"
             >
-             <LinkedInIcon/>
+              <LinkedInIcon />
             </a>
-            <a href="https://github.com/sharoof-khan" className="icon i-github"
-            target="_blank"
-            rel="noopener noreferrer"
+            <a
+              href="https://github.com/sharoof-khan"
+              className="icon i-github"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <GithubIcon />
             </a>
-           
-            
           </div>
         </div>
       </HomePageStyled>
@@ -88,6 +97,7 @@ const HomePageStyled = styled.header`
     transform: translate(-50%, -50%);
     text-align: center;
     width: 80%;
+
     .icons {
       display: flex;
       justify-content: center;
@@ -132,10 +142,27 @@ const HomePageStyled = styled.header`
       }
     }
   }
+
+    @media screen and (max-width: 400px) and (min-width: 250) {
+  /* .typography >::nth-child(2) { */
+    .nm{
+
+      overflow-x: hidden;
+      flex-wrap: wrap;
+
+      font-size: 50px;
+      /* font-style: italic; */
+    }
+  }
+  
   @media screen and (max-width: 500px) {
     overflow-x: hidden;
     flex-wrap: wrap;
   }
+  /* @media screen and (min-width:100px) and (max-width: 400px) {
+    overflow-x: hidden;
+    flex-wrap: wrap;
+  } */
 `;
 
 export default HomePage;

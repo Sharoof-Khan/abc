@@ -63,7 +63,7 @@ const TitleStyled = styled.div`
             left: 0;
           }
         }
-        }
+        /* } */
         span{
             font-weight: 900;
             color: var(--background-light-color-2);
