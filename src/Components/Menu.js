@@ -35,6 +35,15 @@ function Menu({ menuItem }) {
               </div>
               <h6>{item.title}</h6>
               <p>{item.text}</p>
+              <p>{item.text2}</p>
+              <p>{item.text3}</p>
+              <p>{item.text4}</p>
+              <p>{item.text5}</p>
+              <p>{item.text6}</p>
+              <p>{item.text7}</p>
+              <p>{item.text8}</p>
+              <p>{item.text9}</p>
+              <p>{item.text10}</p>
             </div>
           </div>
         );
@@ -44,7 +53,6 @@ function Menu({ menuItem }) {
 }
 
 const MenuItemStyled = styled.div`
-
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 2rem;
@@ -61,7 +69,7 @@ const MenuItemStyled = styled.div`
       text-align: center;
       border-radius: 10px;
       overflow: hidden;
-      border: 2px solid  var(--primary-color);;
+      border: 2px solid var(--primary-color);
       h6 {
         font-size: 1.5rem;
       }
@@ -102,7 +110,6 @@ const MenuItemStyled = styled.div`
       }
 
       .portfolio-image {
-       
         &::before {
           content: "";
           position: absolute;
@@ -115,7 +122,6 @@ const MenuItemStyled = styled.div`
         }
       }
       .portfolio-image:hover {
-   
         ul {
           transform: translateY(0);
           transform: translate(-50%, -50%);
@@ -149,7 +155,7 @@ const MenuItemStyled = styled.div`
         &::before {
           height: calc(100% - 30%);
           width: calc(100% - 4%);
-          background-color: rgba(0, 0, 0, .7);
+          background-color: rgba(0, 0, 0, 0.7);
           opacity: 0.9;
           transform-origin: left;
 
