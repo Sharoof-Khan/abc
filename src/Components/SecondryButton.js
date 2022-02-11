@@ -4,7 +4,7 @@ function SecondryButton({ title }) {
     
     return (
         
-        <SecondryButtonStyled href="https://drive.google.com/file/d/1U_XJqoIjhGivQ2pstsSMfjZQI8OVV91Q/view?usp=sharing" target="_blank">{ title}</SecondryButtonStyled>
+        <SecondryButtonStyled href="https://drive.google.com/drive/folders/1zFwDk-Uasz2jaCu5L1Ue3cdBciR0P2y5?usp=sharing" target="_blank">{ title}</SecondryButtonStyled>
     )
     
 }

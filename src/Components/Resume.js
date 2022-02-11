@@ -43,7 +43,7 @@ function Resume() {
             title={"Bsc IT"}
             subTitle={"Vidyalankar School Of Information Technology"}
             text={
-              "Wadala, Mumbai:400031"
+              "Wadala, Mumbai:400037"
             }
             /* text={
               "Got 75% through out the semester. Always active in project cirriculum."
