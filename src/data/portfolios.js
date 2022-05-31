@@ -1,6 +1,7 @@
 
 import coursera from  '../img/blogs/coursera.jpg';
 import go from  '../img/blogs/goibibo.jpg';
+import adi from  '../img/blogs/Adidas.png';
 
 const portfolios = [
   {
@@ -49,6 +50,21 @@ const portfolios = [
     text4: `● Select seat`,
     text5: `● Checkout`,
     text6: `● Sign-Up,Sign-In`,
+  },
+  {
+    id: 4,
+    category: "E Commerce",
+    image: adi,
+    link1: "https://github.com/Sharoof-Khan/adidas-clone",
+    link2: "https://adidas-clone-sharoof-khan.vercel.app/",
+    title: "Adidas",
+    // text: "This is a clone of GoIbibo website using Reacts, Express and Mongoose, we tried to clone the website with some of its features like flight ticket booking& select seat,checkout & signup, se… ",
+    text: `This is a clone of Adidas website using Reacts, Json-Server and Redux,`,
+    text2: `I tried to clone the website with some of its features like:-`,
+    text3: `● Landing Pag`,
+    text4: `● Select Categories`,
+    text5: `● Add to cart`,
+    text6: `● Check Out`,
   },
 ];
 

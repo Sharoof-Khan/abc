@@ -75,7 +75,7 @@ const MenuItemStyled = styled.div`
       }
       img {
         width: 100%;
-        height: 30vh;
+        height: 35vh;
         object-fit: cover;
       }
       ul {
