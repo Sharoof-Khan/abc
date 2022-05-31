@@ -5,7 +5,7 @@ import styled from "styled-components";
 import resume from "../img/dp.jpg";
 // import me from "../img/resume2.png";
 // import me from "../img/srk.jpg";
-import me from "../img/dp3.png";
+import me from "../img/dp3.jpg";
 import PrimaryButton from "./PrimaryButton";
 import SecondryButton from './SecondryButton'
 import "../App.css"
@@ -61,6 +61,8 @@ const ImageSectionStyled = styled.div`
       width: 100%;
 
       object-fit: cover;
+
+      height:70vh;
     }
   }
   .right-content {
