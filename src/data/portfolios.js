@@ -25,7 +25,7 @@ const portfolios = [
     category: "Web Application",
     image: coursera,
     link1: "https://github.com/rahulyadav96/courseraClone",
-    link2: "https://determined-brahmagupta-c9dae8.netlify.app/",
+    link2: "https://coursera-cloning.herokuapp.com/",
     title: "CourseraClone",
     // text: "We implemented the backend part in our previous project clone of Coursera.com with help of ExpressJS, MongoDB Mongoose and Ejs Frameworks.",
     text: `We implemented the backend part in our previous project clone of Coursera.com.`,
