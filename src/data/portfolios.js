@@ -2,7 +2,7 @@
 import coursera from  '../img/blogs/coursera.jpg';
 import go from  '../img/blogs/goibibo.jpg';
 import adi from  '../img/blogs/Adidas.png';
-
+import kk from '../img/blogs/kkLogo.png'
 const portfolios = [
   {
     id: 1,
@@ -65,6 +65,23 @@ const portfolios = [
     text4: `● Select Categories`,
     text5: `● Add to cart`,
     text6: `● Check Out`,
+  },
+  {
+    id: 5,
+    category: "E Commerce",
+    image: kk,
+    link1: "https://github.com/Sharoof-Khan/kk-enterprises",
+    link2: "http://kk-enterprises.vercel.app/",
+    title: "KK Enterprises",
+    // text: "This is a clone of GoIbibo website using Reacts, Express and Mongoose, we tried to clone the website with some of its features like flight ticket booking& select seat,checkout & signup, se… ",
+    text: `This is a E-commerce website using Reacts, Chakra UI,Json-Server and Redux,`,
+    text2: `I tried to this website with some of its features like:-`,
+    text3: `● Landing Pag`,
+    text4: `● Select Categories`,
+    text5: `● Product Page`,
+    text6: `● Cart Page`,
+    text7: `● Check Out`,
+    text8: `● Order Page`,
   },
 ];
 
