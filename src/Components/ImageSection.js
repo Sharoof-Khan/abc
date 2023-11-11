@@ -7,24 +7,24 @@ import resume from "../img/dp.jpg";
 // import me from "../img/srk.jpg";
 import me from "../img/dp3.jpg";
 import PrimaryButton from "./PrimaryButton";
-import SecondryButton from './SecondryButton'
-import "../App.css"
+import SecondryButton from "./SecondryButton";
+import "../App.css";
 function ImageSection() {
   const infoo = useRef();
   useEffect(() => {
     init(infoo.current, {
       showCursor: false,
-      backSpeed:  100,
+      backSpeed: 100,
       startDelay: 500,
-      backDelay:800,
-      strings: ["Sharoof Khan","A Web Developer", "A Problem Solver"],
+      backDelay: 800,
+      strings: ["Sharoof Khan", "A Software Developer", "A Problem Solver"],
     });
-  },[])
+  }, []);
   return (
     <ImageSectionStyled>
       <div className="left-content">
         <div className="btn">
-        <img src={me} alt="" />
+          <img src={me} alt="" />
         </div>
       </div>
       <div className="right-content">
@@ -33,14 +33,15 @@ function ImageSection() {
         </h4>
         <p className="paragraph">
           I am Web Devloper. Strong in design and integration with intuitive
-          problem-solving skills. Proficient in React, Javascript. Passionate
-          about implementing and launching new projects. Ability to translate
-          business requirements into technical solutions. Looking to start the
-          career as a web developer with a reputed firm driven by technology.
+          problem-solving skills. Proficient in React and React Native,
+          Javascript. Passionate about implementing and launching new projects.
+          Ability to translate business requirements into technical solutions.
+          Looking to start the career as a web developer with a reputed firm
+          driven by technology.
         </p>
         <div className="about-info"></div>
         <PrimaryButton title={"Download Resume"} />
-        <SecondryButton title = {"View Resume"} />
+        <SecondryButton title={"View Resume"} />
       </div>
     </ImageSectionStyled>
   );
@@ -62,7 +63,7 @@ const ImageSectionStyled = styled.div`
 
       object-fit: cover;
 
-      height:70vh;
+      height: 70vh;
     }
   }
   .right-content {

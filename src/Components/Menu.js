@@ -11,7 +11,7 @@ function Menu({ menuItem }) {
           <div className="grid-item" key={item.id}>
             <div className="portfolio-content">
               <div className="portfolio-image">
-                <img src={item.image} alt="" />
+                <img src={item.image} alt="" style={{}} />
                 <ul>
                   <li>
                     <a
@@ -76,7 +76,7 @@ const MenuItemStyled = styled.div`
       img {
         width: 100%;
         height: 35vh;
-        object-fit: cover;
+        /* object-fit:  contain; */
       }
       ul {
         transform: translasteY(-600px);

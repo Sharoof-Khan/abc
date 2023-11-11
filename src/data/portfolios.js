@@ -1,11 +1,67 @@
-
-import coursera from  '../img/blogs/coursera.jpg';
-import go from  '../img/blogs/goibibo.jpg';
-import adi from  '../img/blogs/Adidas.png';
-import kk from '../img/blogs/kkLogo.png'
+import coursera from "../img/blogs/coursera.jpg";
+import go from "../img/blogs/goibibo.jpg";
+import adi from "../img/blogs/Adidas.png";
+import kk from "../img/blogs/kkLogo.png";
+import dba from "../img/blogs/donbosconerul.png";
 const portfolios = [
   {
     id: 1,
+    category: "Web Application",
+    // image: coursera,
+    image: dba,
+    link1: "",
+    link2: "",
+    title: "Don Bosco Nerul Official Website",
+    // text:'we all have scees story',
+    text: `This is Official Website of  Don Bosco Nerul.`,
+    text2: `Tech Stack:-`,
+    text3: `● React Js`,
+    text4: `● Tailwind Css`,
+    // text5: `● Enroll for degree`,
+    // text6: `● carousels  for same`,
+    // text2:'Hello Shahrukh Here'
+  },
+  {
+    id: 2,
+    category: "Mobile Application",
+    // image: coursera,
+    image: "https://www.bollywoodmdb.com/img/new/logobmdb%202.svg",
+    link1:
+      "https://play.google.com/store/apps/details?id=com.bollywoodmdb&hl=en&gl=US&pli=1",
+    link2:
+      "https://play.google.com/store/apps/details?id=com.bollywoodmdb&hl=en&gl=US&pli=1",
+    title: "BollywoodMDB",
+    // text:'we all have scees story',
+    text: `BollywoodMDB is one of the leading entertainment App in India, which covers premium Bollywood news, in-depth celebrity interviews, movie events, and breaking entertainment news from the world of Hindi cinema.`,
+    text2: `Tech Stack:-`,
+    text3: `● React Native`,
+    // text4: `● Enroll for course`,
+    // text5: `● Enroll for degree`,
+    // text6: `● carousels  for same`,
+    // text2:'Hello Shahrukh Here'
+  },
+  {
+    id: 3,
+    category: "Mobile Application",
+    // image: coursera,
+    image:
+      "https://play-lh.googleusercontent.com/0l_FKOADcM5Ye72PKRlyqdkssNB_fhi9kfOJTaWJ4GAzQj270CcQMLFOw4w1OpGUQ3mF=w240-h480-rw",
+    link1:
+      "https://play.google.com/store/apps/details?id=com.bumping.app&hl=en&gl=US",
+    link2:
+      "https://play.google.com/store/apps/details?id=com.bumping.app&hl=en&gl=US",
+    title: "Podberry",
+    // text:'we all have scees story',
+    text: `Podberry is safe, connected journal for you to write privately or share your thoughts and inspirations with people that you can trust. A single journal for everything about you and all that inspires you. Experience it for yourself!.`,
+    text2: `Tech Stack:-`,
+    text3: `● React Native`,
+    // text4: `● Enroll for course`,
+    // text5: `● Enroll for degree`,
+    // text6: `● carousels  for same`,
+    // text2:'Hello Shahrukh Here'
+  },
+  {
+    id: 4,
     category: "Web Application",
     image: coursera,
     link1: "https://github.com/rahulyadav96/coursera",
@@ -21,7 +77,7 @@ const portfolios = [
     // text2:'Hello Shahrukh Here'
   },
   {
-    id: 2,
+    id: 5,
     category: "Web Application",
     image: coursera,
     link1: "https://github.com/rahulyadav96/courseraClone",
@@ -37,7 +93,7 @@ const portfolios = [
     text7: ``,
   },
   {
-    id: 3,
+    id: 6,
     category: "Booking Platform",
     image: go,
     link1: "https://github.com/ShashankSKB/goibibo_clone",
@@ -52,7 +108,7 @@ const portfolios = [
     text6: `● Sign-Up,Sign-In`,
   },
   {
-    id: 4,
+    id: 7,
     category: "E Commerce",
     image: adi,
     link1: "https://github.com/Sharoof-Khan/adidas-clone",
@@ -67,7 +123,7 @@ const portfolios = [
     text6: `● Check Out`,
   },
   {
-    id: 5,
+    id: 8,
     category: "E Commerce",
     image: kk,
     link1: "https://github.com/Sharoof-Khan/kk-enterprises",

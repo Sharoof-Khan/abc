@@ -35,16 +35,14 @@ function Resume() {
             title={"Full Stack Developer"}
             subTitle={"Masai School, Banglore"}
             text={
-              "Learning Full Stack Developement and Communication skills. "
+              "Learned Full Stack Developement(MERN) and Communication skills. "
             }
           />
           <ResumeItem
             year={"2017 - 2020"}
             title={"Bsc IT"}
             subTitle={"Vidyalankar School Of Information Technology"}
-            text={
-              "Wadala, Mumbai:400037"
-            }
+            text={"Wadala, Mumbai:400037"}
             /* text={
               "Got 75% through out the semester. Always active in project cirriculum."
             } */
@@ -53,17 +51,13 @@ function Resume() {
             year={"2016 - 2017"}
             title={"HSC (Science)"}
             subTitle={"GuruNanak College of Arts Commerce And Science"}
-            text={
-              "GTB Nagar, Mumbai:400037"
-            }
+            text={"GTB Nagar, Mumbai:400037"}
           />
           <ResumeItem
             year={"2014 - 2015"}
             title={"SSC"}
             subTitle={"Sitaram Prakash High School"}
-            text={
-              "Wadala, Mumbai:400031"
-            }
+            text={"Wadala, Mumbai:400031"}
           />
         </div>
       </InnerLayout>
@@ -78,9 +72,8 @@ const ResumeStyled = styled.section`
   .u-small-title-margin {
     margin-top: 4rem;
   }
-  
-  .resume-content {
 
+  .resume-content {
     border-left: 2px solid var(--border-color);
   }
 `;
