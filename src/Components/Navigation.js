@@ -1,16 +1,83 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import styled from "styled-components";
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 // import me from "../img/resume1.png";
 import me from "../img/dp.png";
 
 function Navigation({ setNavToggle }) {
-  const [nav1, setNav1] = useState(true);
+  const [nav1, setNav1] = useState(false);
   const [nav2, setNav2] = useState(false);
   const [nav3, setNav3] = useState(false);
   const [nav4, setNav4] = useState(false);
   const [nav5, setNav5] = useState(false);
   const [nav6, setNav6] = useState(false);
+  const [nav7, setNav7] = useState(false);
+  const location = useLocation();
+
+  console.log("useParams====================================");
+  console.log(location);
+  console.log("====================================");
+
+  useEffect(() => {
+    // setNav1(true);
+    if (location?.pathname === "/") {
+      setNav1(true);
+      setNav2(false);
+      setNav3(false);
+      setNav4(false);
+      setNav5(false);
+      setNav6(false);
+      setNav7(false);
+    } else if (location?.pathname === "/about") {
+      setNav1(false);
+      setNav2(true);
+      setNav3(false);
+      setNav4(false);
+      setNav5(false);
+      setNav6(false);
+      setNav7(false);
+    } else if (location?.pathname === "/resume") {
+      setNav1(false);
+      setNav2(false);
+      setNav3(true);
+      setNav4(false);
+      setNav5(false);
+      setNav6(false);
+      setNav7(false);
+    } else if (location?.pathname === "/Skills") {
+      setNav1(false);
+      setNav2(false);
+      setNav3(false);
+      setNav4(true);
+      setNav5(false);
+      setNav6(false);
+      setNav7(false);
+    } else if (location?.pathname === "/portfolios") {
+      setNav1(false);
+      setNav2(false);
+      setNav3(false);
+      setNav4(false);
+      setNav5(true);
+      setNav6(false);
+      setNav7(false);
+    } else if (location?.pathname === "/blogs") {
+      setNav1(false);
+      setNav2(false);
+      setNav3(false);
+      setNav4(false);
+      setNav5(false);
+      setNav6(true);
+      setNav7(false);
+    } else if (location?.pathname === "/contact") {
+      setNav1(false);
+      setNav2(false);
+      setNav3(false);
+      setNav4(false);
+      setNav5(false);
+      setNav6(false);
+      setNav7(true);
+    }
+  }, []);
   return (
     <NavigationStyled>
       <div className="avatar">
@@ -26,12 +93,13 @@ function Navigation({ setNavToggle }) {
             setNav4(false);
             setNav5(false);
             setNav6(false);
+            setNav7(false);
           }}
           className="nav-item"
         >
           <NavLink to="/" activeClassName="active-class" exact>
             Home
-            <div className={`arrowAnim ${nav1?"sh":""}`} >
+            <div className={`arrowAnim ${nav1 ? "sh" : ""}`}>
               <div className="arrowSliding">
                 <div className="arrow"></div>
               </div>
@@ -56,12 +124,13 @@ function Navigation({ setNavToggle }) {
             setNav4(false);
             setNav5(false);
             setNav6(false);
+            setNav7(false);
           }}
           className="nav-item"
         >
           <NavLink to="/about" activeClassName="active-class" exact>
             About
-            <div className={`arrowAnim ${nav2?"sh":""}`}>
+            <div className={`arrowAnim ${nav2 ? "sh" : ""}`}>
               <div className="arrowSliding">
                 <div className="arrow"></div>
               </div>
@@ -86,42 +155,13 @@ function Navigation({ setNavToggle }) {
             setNav4(false);
             setNav5(false);
             setNav6(false);
+            setNav7(false);
           }}
           className="nav-item"
         >
           <NavLink to="/resume" activeClassName="active-class" exact>
-            Education
-            <div className={`arrowAnim ${nav3?"sh":""}`}>
-              <div className="arrowSliding">
-                <div className="arrow"></div>
-              </div>
-              <div className="arrowSliding delay1">
-                <div className="arrow"></div>
-              </div>
-              <div className="arrowSliding delay2">
-                <div className="arrow"></div>
-              </div>
-              <div className="arrowSliding delay3">
-                <div className="arrow"></div>
-              </div>
-            </div>
-          </NavLink>
-        </li>
-        <li
-          onClick={() => {
-            setNavToggle(false);
-            setNav1(false);
-            setNav2(false);
-            setNav3(true);
-            setNav4(false);
-            setNav5(false);
-            setNav6(false);
-          }}
-          className="nav-item"
-        >
-          <NavLink to="/Skills" activeClassName="active-class" exact>
-            Skills
-            <div className={`arrowAnim ${nav3?"sh":""}`}>
+            Experince and Education
+            <div className={`arrowAnim ${nav3 ? "sh" : ""}`}>
               <div className="arrowSliding">
                 <div className="arrow"></div>
               </div>
@@ -146,12 +186,13 @@ function Navigation({ setNavToggle }) {
             setNav4(true);
             setNav5(false);
             setNav6(false);
+            setNav7(false);
           }}
           className="nav-item"
         >
-          <NavLink to="/portfolios" activeClassName="active-class" exact>
-            Projects
-            <div className={`arrowAnim ${nav4?"sh":""}`}>
+          <NavLink to="/Skills" activeClassName="active-class" exact>
+            Skills
+            <div className={`arrowAnim ${nav4 ? "sh" : ""}`}>
               <div className="arrowSliding">
                 <div className="arrow"></div>
               </div>
@@ -176,12 +217,13 @@ function Navigation({ setNavToggle }) {
             setNav4(false);
             setNav5(true);
             setNav6(false);
+            setNav7(false);
           }}
           className="nav-item"
         >
-          <NavLink to="/blogs" activeClassName="active-class" exact>
-            Blogs
-            <div className={`arrowAnim ${nav5?"sh":""}`}>
+          <NavLink to="/portfolios" activeClassName="active-class" exact>
+            Projects
+            <div className={`arrowAnim ${nav5 ? "sh" : ""}`}>
               <div className="arrowSliding">
                 <div className="arrow"></div>
               </div>
@@ -206,12 +248,44 @@ function Navigation({ setNavToggle }) {
             setNav4(false);
             setNav5(false);
             setNav6(true);
+            setNav7(false);
+          }}
+          className="nav-item"
+        >
+          <NavLink to="/blogs" activeClassName="active-class" exact>
+            Blogs
+            <div className={`arrowAnim ${nav6 ? "sh" : ""}`}>
+              <div className="arrowSliding">
+                <div className="arrow"></div>
+              </div>
+              <div className="arrowSliding delay1">
+                <div className="arrow"></div>
+              </div>
+              <div className="arrowSliding delay2">
+                <div className="arrow"></div>
+              </div>
+              <div className="arrowSliding delay3">
+                <div className="arrow"></div>
+              </div>
+            </div>
+          </NavLink>
+        </li>
+        <li
+          onClick={() => {
+            setNavToggle(false);
+            setNav1(false);
+            setNav2(false);
+            setNav3(false);
+            setNav4(false);
+            setNav5(false);
+            setNav6(false);
+            setNav7(true);
           }}
           className="nav-item"
         >
           <NavLink to="/contact" activeClassName="active-class" exact>
             Contact
-            <div className={`arrowAnim ${nav6?"sh":""}`}>
+            <div className={`arrowAnim ${nav7 ? "sh" : ""}`}>
               <div className="arrowSliding">
                 <div className="arrow"></div>
               </div>
@@ -280,7 +354,6 @@ const NavigationStyled = styled.nav`
           color: var(--white-color);
 
           transition: all 200ms ease-in-out;
-     
         }
         &::before {
           content: "";

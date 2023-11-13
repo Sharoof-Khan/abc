@@ -3,29 +3,37 @@ import styled from "styled-components";
 import { InnerLayout } from "../styles/Layouts";
 import Title from "../Components/Title";
 import SmallTitle from "../Components/SmallTitle";
-// import BusinessCenterIcon from "@material-ui/icons/BusinessCenter";
+import BusinessCenterIcon from "@material-ui/icons/BusinessCenter";
 import SchoolIcon from "@material-ui/icons/School";
 import ResumeItem from "../Components/ResumeItem";
 
 function Resume() {
-  // const briefcase = <BusinessCenterIcon />;
+  const briefcase = <BusinessCenterIcon />;
   const school = <SchoolIcon />;
   return (
     <ResumeStyled>
-      <Title title={"Education"} span={"education"} />
+      <Title title={"Experince and Education"} span={"Experince"} />
       <InnerLayout>
-        {/*<div className="small-title">
-          <SmallTitle icon={briefcase} title={"Interships"} />
+        <div className="small-title">
+          <SmallTitle icon={briefcase} title={"Experince"} />
+        </div>
+        {/* <div className="small-title">
+          <SmallTitle icon={briefcase} title={"Software Developer"} />
         </div> */}
-        {/*<div className="resume-content">
+        <div className="resume-content">
           <ResumeItem
-            year={"July, 2017 - Aug,2017"}
-            title={"NTPC, Nabinagar"}
-            text={
-              'Successfully completed the internship in this factory on the subject "Cooling Tower working" with period of 3 months.'
-            }
+            year={"Aug, 2022 - May,2023"}
+            title={"Boppo Technologies,(Software Developer)"}
+            text={"I was worked as a React Native Developer."}
           />
-        </div> */}
+        </div>
+        <div className="resume-content">
+          <ResumeItem
+            year={"May, 2023 - Present"}
+            title={"Don Bosco Nerul,(Software Developer)"}
+            text={"I am working as a React  Developer."}
+          />
+        </div>
         <div className="small-title u-small-title-margin">
           <SmallTitle icon={school} title={"Educational Qualifications"} />
         </div>
