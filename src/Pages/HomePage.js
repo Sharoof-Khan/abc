@@ -4,7 +4,7 @@ import GithubIcon from "@material-ui/icons/GitHub";
 import Particle from "../Components/Particle";
 import { motion } from "framer-motion";
 import { init } from "ityped";
-import LinkedInIcon from '@material-ui/icons/LinkedIn';
+import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import { SiLeetcode } from "react-icons/si";
 // import Style from './HomePage.module.css';
 // import  './HomePage.module.css';
@@ -21,18 +21,18 @@ const containerVariants = {
     transition: { ease: "easeInOut" },
   },
 };
-function HomePage({theme}) {
+function HomePage({ theme }) {
   const info = useRef();
 
   useEffect(() => {
     init(info.current, {
       showCursor: false,
-      backSpeed:  100,
+      backSpeed: 100,
       startDelay: 500,
-      backDelay:800,
-      strings: ["A Web Developer", "A Problem Solver"],
+      backDelay: 800,
+      strings: ["A Software Developer", "A Problem Solver"],
     });
-  },[]);
+  }, []);
   return (
     <motion.div
       variants={containerVariants}
@@ -143,10 +143,9 @@ const HomePageStyled = styled.header`
     }
   }
 
-    @media screen and (max-width: 400px) and (min-width: 250) {
-  /* .typography >::nth-child(2) { */
-    .nm{
-
+  @media screen and (max-width: 400px) and (min-width: 250) {
+    /* .typography >::nth-child(2) { */
+    .nm {
       overflow-x: hidden;
       flex-wrap: wrap;
 
@@ -154,7 +153,7 @@ const HomePageStyled = styled.header`
       /* font-style: italic; */
     }
   }
-  
+
   @media screen and (max-width: 500px) {
     overflow-x: hidden;
     flex-wrap: wrap;

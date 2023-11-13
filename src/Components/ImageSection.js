@@ -32,12 +32,11 @@ function ImageSection() {
           I am <span ref={infoo}></span>
         </h4>
         <p className="paragraph">
-          I am Web Devloper. Strong in design and integration with intuitive
-          problem-solving skills. Proficient in React and React Native,
-          Javascript. Passionate about implementing and launching new projects.
-          Ability to translate business requirements into technical solutions.
-          Looking to start the career as a web developer with a reputed firm
-          driven by technology.
+          I am Software Devloper. Strong in design and integration with
+          intuitive problem-solving skills. Proficient in React and React
+          Native, Javascript. Passionate about implementing and launching new
+          projects. Ability to translate business requirements into technical
+          solutions.
         </p>
         <div className="about-info"></div>
         <PrimaryButton title={"Download Resume"} />
