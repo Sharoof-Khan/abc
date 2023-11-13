@@ -14,9 +14,9 @@ function Navigation({ setNavToggle }) {
   const [nav7, setNav7] = useState(false);
   const location = useLocation();
 
-  console.log("useParams====================================");
-  console.log(location);
-  console.log("====================================");
+  // console.log("useParams====================================");
+  // console.log(location);
+  // console.log("====================================");
 
   useEffect(() => {
     // setNav1(true);

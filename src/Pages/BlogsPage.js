@@ -30,23 +30,21 @@ function BlogsPage() {
         <BlogsStyled>
           <Title title={"Blogs"} span={"Blogs"} />
           <InnerLayout className={"blog"}>
-            {blogs.map((blog) => {
+            {blogs.map((blog, index) => {
               return (
                 <a
-                href={blog.src}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <div key={blog.id} className={"blog-item"}>
-                  <div className="image">
-                    <img src={blog.image} alt="" />
+                  href={blog.src}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  key={index}
+                >
+                  <div key={blog.id} className={"blog-item"}>
+                    <div className="image">
+                      <img src={blog.image} alt="" />
+                    </div>
+                    <div className="title">{blog.title}</div>
                   </div>
-                  <div className="title">
-                   
-                      {blog.title}
-                  </div>
-                </div>
-                    </a>
+                </a>
               );
             })}
           </InnerLayout>
